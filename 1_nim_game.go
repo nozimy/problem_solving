@@ -4,24 +4,23 @@
 
 // Example:
 // Input: 4
-// Output: false 
+// Output: false
 // Explanation: If there are 4 stones in the heap, then you will never win the game;
-//             No matter 1, 2, or 3 stones you remove, the last stone will always be 
+//             No matter 1, 2, or 3 stones you remove, the last stone will always be
 //             removed by your friend.
-
 
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 func main() {
-  result := canWinNim(4)
-  
-  fmt.Fprintf(writer, "%d\n", result)
+	result := canWinNim(4)
+
+	fmt.Printf("%t\n", result)
 }
 
 func canWinNim(n int) bool {
-   return n % 4 != 0;
+	return n%4 != 0
 }
