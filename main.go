@@ -15,6 +15,8 @@ func main() {
 		problems.RunNumGameProblem,
 		problems.RunGetMaxDepthProblem,
 		problems.RunReverseLinkedListProblem,
+		problems.RunMaxVisitorsProblem,
+		problems.SwapWithoutAdditionalMemory,
 	}
 
 	problemsArr[problemNum]()
