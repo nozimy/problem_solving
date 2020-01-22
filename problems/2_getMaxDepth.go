@@ -1,4 +1,4 @@
-package main
+package problems
 
 import (
 	"fmt"
@@ -13,7 +13,7 @@ type BinaryNode struct {
 	Right *BinaryNode
 }
 
-func main() {
+func RunGetMaxDepthProblem() {
 	root := newNode(8)
 
 	root.Left = newNode(3)
@@ -24,7 +24,7 @@ func main() {
 
 	result := getMaxDepth(root)
 
-	fmt.Printf("Height of binary search tree is: %d", result)
+	fmt.Printf("Height of binary search tree is: %d\n", result)
 }
 
 func getMaxDepth(root *BinaryNode) int {

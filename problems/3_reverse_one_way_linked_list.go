@@ -1,4 +1,4 @@
-package main
+package problems
 
 import "fmt"
 
@@ -7,7 +7,7 @@ type Node struct {
 	Next *Node
 }
 
-func main() {
+func RunReverseLinkedListProblem() {
 	head := &Node{Data: 1}
 	head.Next = &Node{Data: 2}
 	head.Next.Next = &Node{Data: 3}

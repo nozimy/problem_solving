@@ -9,13 +9,13 @@
 //             No matter 1, 2, or 3 stones you remove, the last stone will always be
 //             removed by your friend.
 
-package main
+package problems
 
 import (
 	"fmt"
 )
 
-func main() {
+func RunNumGameProblem() {
 	result := canWinNim(4)
 
 	fmt.Printf("%t\n", result)
